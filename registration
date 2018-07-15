@@ -1,0 +1,123 @@
+This is where things get nasty (at least for me…)
+
+主要内容：
+<form></form>
+<input>  |  <input type="xxxx">
+<label></label>
+
+label有两种形式：
+   <label>
+    	Email: 
+    	<input name="Email:" type="text" placeholder="your name">
+   </label>
+或者for和id对应：
+<label for="username">Username:</label>
+<input id="username" type="text" placeholder="xxx">
+
+radio button：n选1，给个相同name
+	<label for="male" >Male</label>
+	<input name="gender" id="male" type="radio">
+	<label for="female">Female</label>
+	<input name="gender" id="female" type="radio">
+	<label for="other">Other</label>
+	<input name="gender" id="other" type="radio">
+
+Send the data in the request: need a name
+
+作业html，跟Colt不一样的部分单独标出来了，做出来效果一样的我姑且认为我的也对...
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<form>
+	<p><label>
+		First Name: 
+		<input name="first" type="text" placeholder="John" required>
+	</label>
+	<label>
+	    Last Name: 
+	    <input name="last" type="text" placeholder="Smith" required>
+    </label>
+    </p>
+colt用了for／id：
+  <label for="first">First Name: </label>
+	<input id="first" name="first" type="text" placeholder="John" required>
+  <label for="last">Last Name: </label>
+	<input id="last" name="last" type="text" placeholder="Smith" required>
+ 并且他分段用了<div></div>
+	
+
+	<p><label for="male" >Male</label>
+	<input name="gender" id="male" type="radio" value="MALE">
+	<label for="female">Female</label>
+	<input name="gender" id="female" type="radio" value="FEMALE">
+	<label for="other">Other</label>
+	<input name="gender" id="other" type="radio" value="OTHER">
+	</p>
+	
+	
+ <div>
+  <label>
+    	Email: 
+    	<input name="email" type="email" placeholder="your email" required>
+    </label>
+	<label>
+    	Password:
+    	<input name="password" type="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters" required>
+    </label>
+ </div>
+ 具体跟pattern attribute有关的信息看上面，大概是 pattern=".{a,b}" required title=
+ "(what you wanna be seen)Password must be between a and b characters" 下次应该会有更具体的应用
+ 还提到了maxlength和minlength有些浏览器不支持
+ 
+
+<p>
+<label>
+  Birthday:
+	<select name="month">
+		<option value="">Month</option>
+		<option>Jan</option>
+		<option>Feb</option>
+		<option>Mar</option>
+		<option>Apr</option>
+	</select>
+ 
+	<select name="day">
+		<option>Day</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+
+	<select name="year">
+		<option>Year</option>
+		<option>1900</option>
+		<option>1901</option>
+		<option>1902</option>
+	</select>
+</label>
+</p>
+这个完全一步步内嵌的格式我是真懒得去调了，p和div就让它们先这样吧啊
+
+
+<p>I agree to the terms and conditions <input type="checkbox"></p> 
+来来来看看大神是如何统一格式的：
+<div>
+ <lable for="agreed">I agree to the terms and conditions</label>
+ <input id="agreed" name="agreed" type="checkbox">
+</div>
+
+
+<button>Submit</button>
+统一格式看这里：
+<input text="submit">
+
+</form>
+
+</body>
+</html>
