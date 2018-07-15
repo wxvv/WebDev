@@ -6,10 +6,10 @@ This is where things get nasty (at least for me…)
 <label></label>
 
 label有两种形式：
-   <label>
-    	Email: 
-    	<input name="Email:" type="text" placeholder="your name">
-   </label>
+<label>
+   Email: 
+   <input name="Email:" type="text" placeholder="your name">
+</label>
 或者for和id对应：
 <label for="username">Username:</label>
 <input id="username" type="text" placeholder="xxx">
@@ -35,41 +35,43 @@ Send the data in the request: need a name
 <h1>Register</h1>
 
 <form>
-	<p><label>
-		First Name: 
-		<input name="first" type="text" placeholder="John" required>
-	</label>
-	<label>
-	    Last Name: 
-	    <input name="last" type="text" placeholder="Smith" required>
+  <p>
+    <label>
+	First Name: 
+	<input name="first" type="text" placeholder="John" required>
     </label>
-    </p>
+    <label>
+	Last Name: 
+	<input name="last" type="text" placeholder="Smith" required>
+    </label>
+  </p>
 colt用了for／id：
   <label for="first">First Name: </label>
-	<input id="first" name="first" type="text" placeholder="John" required>
+  <input id="first" name="first" type="text" placeholder="John" required>
   <label for="last">Last Name: </label>
-	<input id="last" name="last" type="text" placeholder="Smith" required>
- 并且他分段用了<div></div>
+  <input id="last" name="last" type="text" placeholder="Smith" required>
+并且他分段用了<div></div>
 	
 
-	<p><label for="male" >Male</label>
-	<input name="gender" id="male" type="radio" value="MALE">
-	<label for="female">Female</label>
-	<input name="gender" id="female" type="radio" value="FEMALE">
-	<label for="other">Other</label>
-	<input name="gender" id="other" type="radio" value="OTHER">
-	</p>
+<p>
+<label for="male" >Male</label>
+<input name="gender" id="male" type="radio" value="MALE">
+<label for="female">Female</label>
+<input name="gender" id="female" type="radio" value="FEMALE">
+<label for="other">Other</label>
+<input name="gender" id="other" type="radio" value="OTHER">
+</p>
 	
 	
  <div>
   <label>
     	Email: 
     	<input name="email" type="email" placeholder="your email" required>
-    </label>
-	<label>
+  </label>
+  <label>
     	Password:
     	<input name="password" type="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters" required>
-    </label>
+  </label>
  </div>
  具体跟pattern attribute有关的信息看上面，大概是 pattern=".{a,b}" required title=
  "(what you wanna be seen)Password must be between a and b characters" 下次应该会有更具体的应用
