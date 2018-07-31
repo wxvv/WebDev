@@ -1,0 +1,114 @@
+New stuff we've covered in this exercise: thumbnail, different kinds of navbar, Font Awesome (which is truly awesome)...
+And excuse me for those lenthy image URLs
+
+HTML:
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbat-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+            </button>
+			<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> IMGS</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Sign Up</a></li>
+			<li><a href="#">Login</a></li>	
+		  </ul>
+	    </div>
+	</div>
+</nav>
+<div class="container">
+	<div class="jumbotron">
+	<h1><i class="fas fa-camera-retro"></i> The Image Gallery</h1>
+	<p>Ohh leh leh ohh laa laa!</p>
+  </div> 
+    <div class="row">
+    	<div class="col-lg-4 col-sm-6">
+    	 <div class="thumbnail"> 
+			<img src="https://images.unsplash.com/photo-1455593984172-9f753a2e1ebd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d779410f8effe625a8352c5c908888b3&auto=format&fit=crop&w=1350&q=80">
+    	 </div>
+    	</div>
+    	<div class="col-lg-4 col-sm-6">
+    	 <div class="thumbnail"> 
+			<img src="https://images.unsplash.com/photo-1446822775955-c34f483b410b?ixlib=rb-0.3.5&s=cdfdd81084a445568ae5ec69cda950d0&auto=format&fit=crop&w=2550&q=80">
+    	 </div>
+    	</div>
+    	<div class="col-lg-4 col-sm-6">
+    	 <div class="thumbnail"> 
+			<img src="https://images.unsplash.com/photo-1469796466635-455ede028aca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3dd45924b64ebc480baf05650e3f0048&auto=format&fit=crop&w=2550&q=80">
+    	 </div>
+    	</div>
+    	<div class="col-lg-4 col-sm-6">
+    	 <div class="thumbnail"> 
+			<img src="https://images.unsplash.com/photo-1506469717960-433cebe3f181?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=23880e0e1f04f6a0c0971fba76d8421d&auto=format&fit=crop&w=1350&q=80">
+    	 </div>
+    	</div>
+    	<div class="col-lg-4 col-sm-6">
+    	 <div class="thumbnail"> 
+			<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-0.3.5&s=d06b0f898c67e3d5b1dc5f0c9d29c1e0&auto=format&fit=crop&w=2550&q=80">
+    	 </div>
+    	</div>
+    	<div class="col-lg-4 col-sm-6">
+    	 <div class="thumbnail"> 
+			<img src="https://images.unsplash.com/photo-1470321386428-4b1668f21ad3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f9915990bc1c4afc8e216b7887bfb754&auto=format&fit=crop&w=1350&q=80">
+    	 </div>
+    	</div>
+    	<div class="col-lg-4 col-sm-6">
+    	 <div class="thumbnail"> 
+			<img src="https://images.unsplash.com/photo-1506667527953-22eca67dd919?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6326214b7ce18d74dde5e88db4a12dd5&auto=format&fit=crop&w=1350&q=80">
+    	 </div>
+    	</div>
+    	<div class="col-lg-4 col-sm-6">
+    	 <div class="thumbnail"> 
+			<img src="https://images.unsplash.com/photo-1508842486971-80e43cd3b916?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b43401ea74941df879534ba690a0df6d&auto=format&fit=crop&w=1350&q=80">
+    	 </div>
+    	</div>
+    	<div class="col-lg-4 col-sm-6">
+    	 <div class="thumbnail"> 
+			<img src="https://images.unsplash.com/photo-1514163161321-f4f7c2a90296?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a347f5e61f725aacf5bcfdfe0dfb4a18&auto=format&fit=crop&w=1350&q=80">
+    	 </div>
+    	</div>
+    </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-2.2.4.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+CSS:
+body {
+	padding-top: 70px;
+}
+.jumbotron {
+	color: #2c3e50;
+	background: #ecf0f1;
+}
+.navbar-inverse {
+	background: #2c3e50;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+.navbar-inverse .navbar-brand {
+	color: white;
+}
