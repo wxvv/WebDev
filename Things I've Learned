@@ -5,9 +5,9 @@ html + tab = boilerplate
 Command + shift + d = copy n paste
 Command + slash = 全变comments
 
+这个地方看起来挺适合给我po笔记的，希望我用得惯
+
 先把大的写完，然后处理inside，再inside的inside，可能会比我一步一步直接下来要顺畅的多，也不容易混在一起
-
-
 
 
 第一份practice：
@@ -49,10 +49,8 @@ Command + slash = 全变comments
 			<li><em>em</em></li>
 			<li><strong>strong</strong></li>
 		</ul>
-
 	</li>
 </ul>
-
 
 </body>
 </html>
