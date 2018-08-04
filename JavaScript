@@ -1,0 +1,22 @@
+## command + option + J = open the console
+
+5 primitive datatypes:
+## numbers  
+3/9.5/-10   
+a % b: remainder operator
+
+## strings  
+"Hello World"/"43"
+concatenation
+escape character: \" \"   "hi\\">> "hi\"
+
+## booleans  true/false 
+## null and undefined  null/undefined (value)
+
+//this is the comments in js
+clear()
+
+
+var userName = prompt(): ask for some input, and it stores in a variable
+alert(): be obnoxious, alert something in a pop-up
+console.log(): print something to the console
