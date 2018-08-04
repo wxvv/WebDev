@@ -20,3 +20,9 @@ clear()
 var userName = prompt(): ask for some input, and it stores in a variable
 alert(): be obnoxious, alert something in a pop-up
 console.log(): print something to the console
+
+== performs type coercion, while === does not
+
+
+--------------------------------------------------------------------------------------------------------------------------
+100th lecture! BOOM BOOM POW!
