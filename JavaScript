@@ -26,3 +26,9 @@ console.log(): print something to the console
 
 --------------------------------------------------------------------------------------------------------------------------
 100th lecture! BOOM BOOM POW!
+
+
+// If age is a perfect square
+if(age % Math.sqrt(age) === 0) {
+  console.log("Your age is a perfect square!");
+}
