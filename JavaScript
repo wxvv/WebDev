@@ -32,3 +32,10 @@ if(age % Math.sqrt(age) === 0) {
 
 While writing a WHILE loop, don't forget to include <script></script> in the html file.
 str.indexOf("xxx") === -1: not there
+
+// learn how to use Google:
+function kebabToSnake(string) {
+	// replace - with _, then return as string
+	var result = string.replace(/-/g, "_")
+	return result
+}
