@@ -11,10 +11,10 @@ concatenation
 escape character: \" \"   "hi\\">> "hi\"
 
 ## booleans  true/false 
-## null and undefined  null/undefined (value)
+## null
+## undefined      null/undefined (value)
 
-//this is the comments in js
-clear()
+//this is the comments in js; clear()
 
 var userName = prompt(): ask for some input, and it stores in a variable
 alert(): be obnoxious, alert something in a pop-up
