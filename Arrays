@@ -1,0 +1,25 @@
+Some important methods we are gonna use:
+push(add at the end)    / pop(remove the last)
+colors.push("something")/ color.pop()
+
+unshift(add to the front)   /   shift(remove the first)
+colors.unshift("first")     /   colors.shift()
+
+indexOf()
+friends.indexOf("Amy") ; returns -1 if element not present
+
+slice()  ; sort of [) like fruits.slice(1,3) is actually [1,3)
+
+------------------------------------------------------------------
+forEach(): an easy build-in way of iterating over an array
+arr.forEach(someFunction)
+
+//You can pass in an anonymous function:
+[1,2,3].forEach(function(el, i, arr) {
+  console.log(el, i, arr);
+});
+//Or you can pass in a pre-written, named function:
+function logNums(el, i, arr) {
+  console.log(el, i, arr);
+}
+[1,2,3].forEach(logNums);
