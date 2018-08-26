@@ -1,0 +1,40 @@
+// Here are 4 problems abour array iteration, and some of them involve forEach and some don't.
+// Unfortunately I only managed to solve the last one on my own (part of...)
+
+//printReverse: print out the elements in an array in reverse order
+function printReverse(arr) {
+	for(var i = arr.length - 1; i>=0; i--) {
+		console.log(arr[i])
+    }
+}
+
+//isUniform: return true if all elements in an array are identical
+function isUniform(arr) {
+	var first = arr[0]
+	for(var i = 1; i<arr.length; i++) {
+		if(arr[i] !== first) {
+			return false
+		} 
+	}
+	return true
+}
+
+//sumArray: return the sum of all elements in the array
+function sumArray(arr) {
+	var total = 0
+	arr.forEach(function(element) {
+		total += element
+	})
+	return total
+}
+
+//max: return the maximum number in the array
+function max(arr) {
+	var max =arr[0]
+	for(var i =1; i<arr.length; i++ ) {
+		if(arr[i]>max) {
+			max = arr[i]
+		}
+	}
+	return max
+}
