@@ -1,0 +1,33 @@
+var movies = [
+	{
+	  title: "Despicable Me",
+	  hasWated: true,
+	  rating: 5
+	},
+	{
+	  title: "taotailang",
+	  hasWatched: false,
+	  rating: 3
+	},
+	{
+	  title: "Iron Man",
+	  hasWatched: false,
+	  rating: 4.5
+	}
+]	
+
+function build(movie) {
+	var result = "You have ";
+	if(movie.hasWatched) {
+		result += "watched "
+	}   else {
+		result += "not seen "
+	}
+	result += "\"" + movie.title + "\" - "
+	result += movie.rating + " stars"
+	return result
+}
+movies.forEach(function(movie){
+	console.log(build(movie))
+})
+	
