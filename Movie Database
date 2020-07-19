@@ -1,7 +1,7 @@
 var movies = [
 	{
 	  title: "Despicable Me",
-	  hasWated: true,
+	  hasWatched: true,
 	  rating: 5
 	},
 	{
